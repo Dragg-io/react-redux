@@ -1,0 +1,10 @@
+.photos {
+  width: 95%;
+  max-width: 400px;
+  min-height: 400px;
+  overflow: auto;
+}
+
+.photos::-webkit-scrollbar {
+  display: none;
+}
