@@ -1,5 +1,5 @@
 import React from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { autoLogin, login } from '../../store/modules/login';
 
 import styles from './Form.module.css';
@@ -18,8 +18,6 @@ export default function Form() {
     event.preventDefault();
     dispatch(login({ username, password }));
   }
-
-  const { data, loading } = useSelector((state) => state.login.user);
 
   return (
     <div className={styles.container}>
